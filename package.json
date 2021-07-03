@@ -9,10 +9,13 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "lerna run dev",
+    "dev": "lerna run dev --parallel",
     "build": "lerna run build",
-    "test": "lerna run test",
-    "start": "lerna run start",
+    "test": "lerna run test --parallel",
+    "start": "lerna run start --parallel",
+    "cypress:open": "lerna run open --parallel",
+    "cypress:run": "lerna run run --parallel",
+    "cypress:test": "lerna run test --parallel",
     "gh-deploy": "yarn workspace my-resume gh-deploy"
   },
   "license": "MIT",
@@ -20,6 +23,8 @@
     "lerna": "^4.0.0"
   },
   "resolutions": {
-    "babel-loader": "8.1.0"
+    "babel-jest": "^26.6.0",
+    "babel-loader": "8.1.0",
+    "jest": "26.6.0"
   }
 }
