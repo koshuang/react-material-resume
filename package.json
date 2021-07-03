@@ -12,7 +12,8 @@
     "dev": "lerna run dev",
     "build": "lerna run build",
     "test": "lerna run test",
-    "start": "lerna run start"
+    "start": "lerna run start",
+    "gh-deploy": "yarn workspace my-resume gh-deploy"
   },
   "license": "MIT",
   "devDependencies": {
