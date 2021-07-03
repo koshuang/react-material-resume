@@ -1,21 +1,18 @@
-import { StyledThemeProvider } from "definitions/styled-components";
-import { Provider } from 'react-redux'
-import store from 'redux/store'
-
-import Home from "pages";
-
+import { StyledThemeProvider } from 'definitions/styled-components';
+import { Home } from 'pages/HomePage';
+import { Provider } from 'react-redux';
+import store from 'redux/store';
 
 function App(): JSX.Element {
-
-    return (
-        <StyledThemeProvider>
-<Provider store={store}>
+  return (
+    <StyledThemeProvider>
+      <Provider store={store}>
         <div className="App">
-            <Home />
+          <Home />
         </div>
-         </Provider>
-</StyledThemeProvider>
-      );
-};
+      </Provider>
+    </StyledThemeProvider>
+  );
+}
 
 export default App;
