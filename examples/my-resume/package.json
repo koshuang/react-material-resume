@@ -2,6 +2,7 @@
   "name": "my-resume",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://koshuang.github.io/react-material-resume",
   "dependencies": {
     "@craco/craco": "^6.1.2",
     "@reduxjs/toolkit": "^1.5.0",
