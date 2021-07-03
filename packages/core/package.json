@@ -22,8 +22,7 @@
     "lint": "prettier -c 'src/**/*'; eslint src --ext .ts,.tsx",
     "format": "prettier --write 'src/**/*'; eslint src --fix --ext .ts,.tsx",
     "build": "tsc",
-    "prepublishOnly": "yarn build",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "prepublishOnly": "yarn build"
   },
   "bugs": {
     "url": "https://github.com/koshuang/react-material-resume/issues"

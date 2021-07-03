@@ -13,6 +13,9 @@
     "build": "lerna run build",
     "test": "lerna run test --parallel",
     "start": "lerna run start --parallel",
+    "cypress:open": "lerna run open --parallel",
+    "cypress:run": "lerna run run --parallel",
+    "cypress:test": "lerna run test --parallel",
     "gh-deploy": "yarn workspace my-resume gh-deploy"
   },
   "license": "MIT",
